@@ -19,7 +19,7 @@ $classXML = new ParsXML($link);
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<link rel="stylesheet" type="text/css" href="<?=Config::DirCSS()?>main.css"/>
+	<link rel="stylesheet" type="text/css" href="<?=Config::DirCSS()?>main_2.css"/>
 </head>
 <body>
     <h1><?=$title?></h1>

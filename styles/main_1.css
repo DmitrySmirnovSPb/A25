@@ -1,0 +1,118 @@
+*{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Candara, Arial;
+  font-size: 2.4vh;
+}
+body{
+  background-color: #659dbd;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+h1{
+  color: blue;
+  font-family: Verdana, Tahoma;
+  font-size: 4vh;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h2, h3{
+  font-size: 3vh;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  margin-top: 15px;
+  
+}
+ol{
+  margin-left: 25px;
+}
+p{
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+p > a{
+  color: #aaa;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
+}
+p > a:hover{
+  color: red;
+  text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff;
+}
+#form{
+  background-color: #eee;
+  border-radius: 8px;
+  display: none;
+  left: calc(50% - 40vw / 2);
+  padding: 8px;
+  position: absolute;
+  top: 100px;
+  width: 40vw;
+  z-index: 1000;
+}
+.close{
+  background-color: red;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  height:24px;
+  padding-left: 5px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 19px;
+  z-index: 1100;
+}
+.close > span {
+  display: block;
+  font-size: 30px;
+  margin: -10px;
+  padding-left: 10px;
+}
+.close:active{
+  background-color: green;
+}
+#top{
+  height: 20px;
+  width:100%
+}
+#form > h2 {
+  color: #056ca8;
+  font-family: 'Segoe Script';
+  font-size: 3.2vh;
+}
+#form > h3 {
+  color: #056ca8;
+  font-family: 'Segoe Script';
+  font-size: 2.3vh;
+}
+#form > h2,#form > h3, #form > p{
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+#form > form > p {
+  display: block;
+  margin: 15px auto;
+  width: 80%;
+}
+#form > form > p > input {
+  color: #000;
+  font-family: Verdana;
+  height: 3.3vh;
+  width: 100%;
+}
+#form > form > p > input[type="submit"]{
+  color: #000;
+  display: block;
+  height: 5vh;
+  margin: 40px auto;
+  width: 80%;
+}
+#form > form > p > input[type="submit"]:hover {
+  color: #fff;
+  cursor:pointer;
+  background-color: green;
+}
