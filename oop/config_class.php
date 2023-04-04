@@ -16,6 +16,7 @@ abstract class Config {
     static public function SiteHost(){return $_SERVER['SERVER_NAME'];}
     static public function SiteRoot(){return $_SERVER['DOCUMENT_ROOT'].'/';}
     static public function Address(){return self::SSL().self::SiteHost().'/';}
+    static public function Home(){return '<p><a href = "/">Главная</a></p>'."\n";}
 
     static public function DirImg(){return self::Address().'images/';}
     static public function DirIcon(){return self::Address().'favicon/';}

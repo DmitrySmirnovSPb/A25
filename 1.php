@@ -7,7 +7,6 @@ require_once (__ROOT__.'start.php');
 ###### 
 */
 	$title = 'Тестовое задание 1: ловец лидов для сайта';
-	$home = '<p><a href = "/">Главная</a></p>'."\n";
     $flag = 'none';
     if(isset($_POST['submit']) && $_POST['submit'] == 'Свяжитесь со мной'){
         $data = new NewLead($_POST);
@@ -37,7 +36,7 @@ require_once (__ROOT__.'start.php');
 <body>
     <div id = "top" flag = "<?=$flag?>"></div>
     <h1><?=$title?></h1>
-    <?=$home?>
+    <?=Config::Home()?>
     <article>
         <h3>Цель задания</h3>
         <ol>
@@ -67,6 +66,6 @@ require_once (__ROOT__.'start.php');
             <p><input type="submit" name="submit" value="Свяжитесь со мной" ></p>
 		</form>
 	</div>
-    <?=$home?>
+    <?=Config::Home()?>
 </body>
 </html>

@@ -7,7 +7,6 @@ require_once (__ROOT__.'start.php');
 ###### 
 */
 $title = 'Тестовое задание 2: XSLT-трансформация';
-$home = '<p><a href = "/">Главная</a></p>'."\n";
 
 $link = __ROOT__.'test_task_2.xml';
 $classXML = new ParsXML($link);
@@ -23,7 +22,7 @@ $classXML = new ParsXML($link);
 </head>
 <body>
     <h1><?=$title?></h1>
-    <?=$home?>
+    <?=Config::Home()?>
     <article>
         <h3>Цель задания</h3>
         <ol>
@@ -45,6 +44,6 @@ $classXML = new ParsXML($link);
     <div class="div-table">
         <?=$classXML?>
     </div>
-    <?=$home?>
+    <?=Config::Home()?>
 </body>
 </html>

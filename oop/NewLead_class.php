@@ -4,8 +4,8 @@ class NewLead {
 
 
     public $answer;// Флаг удачной загрузки лида в DB
-    private $data;// Обезвреженные данные из _REQEST
-    private $error = [];// Массив ошибок
+    protected  $data;// Обезвреженные данные из _REQEST
+    protected  $error = [];// Массив ошибок
 
     public function __construct($data){
         $this->answer = 'none';
@@ -30,7 +30,7 @@ class NewLead {
         return true;
     }
 // проверка данных не корректность
-    private function check(){
+    protected  function check(){
         if(isset($this->data['name'])) $this->checkName();
         if(isset($this->data['phone'])) $this->checkPhone();
         if(isset($this->data['email'])) $this->checkEmail();
@@ -41,7 +41,7 @@ class NewLead {
         if($len == 0)
             $this->error['name'] = 'Пустая строка, вы не заполнили Имя';
         elseif( $len < 3 or $len > 64)
-            $this->error['name'] = 'Имя слишком короткое или длинное';
+            $this->error['name'] = 'Имя слишком короче 3 или длинее 64 символов';
         else
             if(!preg_match("/^[a-zа-я][\sa-zа-я]+$/ius",$this->data['name']))
             $this->error['name'] = 'Имя имеет лишние символы.';
